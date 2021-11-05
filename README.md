@@ -1,35 +1,8 @@
-This is a simple addon that shows your class resources in a combo point manner with a runic Diablo-like theme. It's movable, scalable and have several color choices.
+This is an addon for those that hate fun. 
 
-Type **/scp** to open the options window!
+It gives you a clickable red X when you are under the effect of a known Hallow's Eve or Blingtron dance transform. Clicking the X removes the transform and makes you beautiful again. 
+Note that since this addon uses secure macro buttons to be able to remove auras, it can only parse and update the button outside of combat. This means if somebody wands you during combat, the button will not appear until combat ends. This is a game limitation.
 
-## **Features**  
-* Movable & scalable *(New in 2.x)*
-* Points not available or currently regenerated are semi-transparent
-* Everything is even more semi-transparent when not engaged in combat
-* Only visible when you have an attackable target selected *(optional)*
-
-## **Supported class resources:**  
-* Combo Points *(Druids, Rogues, Vehicles)*
-* Arcane Charges *(Arcane Mages)*
-* Holy Power *(Retribution Paladins)*
-* Soul Shards *(Warlocks)*
-* Soul Fragments *(Demon Hunters)*
-* Chi *(Windwalker Monk)*
-* Stagger *(Brewmaster Monk)*
-* Runes *(Death Knights)*
-
-## **Chat commands:**
-* **/scp** - Toggle the overlay for dragging and scaling! Drag with the mouse, change scale with the mousewheel. 
-* **/scp classcolor on** - Enables class coloring of the resource points. 
-* **/scp classcolor off** - Disables class coloring and reverts to power colors. *(default)* 
-* **/scp show always** - Always show the frame. *(default)* 
-* **/scp show smart** - Hides when you have no target set, or if your target is unattackable. 
-* **/scp help** - Shows the above choices in-game. 
-
-## **Planned, but unreleased features:**
-* Multiple texture choices
-* Custom resource colors
-* Remember different setups based on enabled UI addons (like DiabolicUI, AzeriteUI etc)
 
 ## **Support & Connect**
 * PayPal: [www.paypal.me/goldpawsstuff](https://www.paypal.me/goldpawsstuff)  
