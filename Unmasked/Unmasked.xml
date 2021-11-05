@@ -1,0 +1,87 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Checkbutton name="UnmaskedActionButton" parent="UIParent" toplevel="true" hidden="true" frameStrata="FULLSCREEN" frameLevel="5" ignoreParentScale="true" scale="0.71111111111111" inherits="SecureActionButtonTemplate">
+
+		<Size x="64" y="64"/>
+		<Anchors>
+			<Anchor point="CENTER" x="0" y="-80"/>
+		</Anchors>
+
+		<Attributes>
+			<Attribute name="type" type="string" value="macro"/>
+		</Attributes>
+
+		<Scripts>
+			<OnLoad>
+				-- Store the defaults as constants
+				self.defaultWidth = math.floor(self:GetWidth() + .5);
+				self.defaultHeight = math.floor(self:GetHeight() + .5);
+
+				-- Load saved position
+				local db = IsAddOnLoaded("Unmasked") and Unmasked_DB;
+				if (db) and (db.point) and (db.offsetX) and (db.offsetX) then
+					self:ClearAllPoints();
+					self:SetPoint(db.point, db.offsetX, db.offsetY);
+				else
+					self:RegisterEvent("ADDON_LOADED");
+				end
+
+				self:RegisterEvent("PLAYER_ENTERING_WORLD");
+				self:RegisterUnitEvent("UNIT_AURA", "player");
+
+			</OnLoad>
+		</Scripts>
+
+		<Frames>
+			<Frame name="$parentMoveButton" parentKey="MoveButton">
+				<Scripts>
+					<OnLoad>
+						self:EnableMouse(false);
+						self:RegisterForDrag("LeftButton");
+						self:SetAllPoints(self:GetParent());
+						self:RegisterEvent("MODIFIER_STATE_CHANGED");
+						self:SetScript("OnEvent", function(self) 
+							if IsShiftKeyDown() or IsControlKeyDown() then
+								self:EnableMouse(true);
+							else
+								self:EnableMouse(false);
+							end
+						end);
+					</OnLoad>
+					<OnMouseUp>
+						if (IsShiftKeyDown()) then
+							self:GetParent():ClearAllPoints();
+							self:GetParent():SetPoint("CENTER", 0, -80);
+
+							local point, offsetX, offsetY = self:GetParent():GetParsedPosition();
+							Unmasked_DB = Unmasked_DB or {};
+							Unmasked_DB.point = point;
+							Unmasked_DB.offsetX = offsetX;
+							Unmasked_DB.offsetY = offsetY;
+						end
+					</OnMouseUp>
+					<OnDragStart>
+						self:GetParent():SetMovable(true);
+						self:GetParent():SetUserPlaced(true);
+						self:GetParent():StartMoving();
+					</OnDragStart>
+					<OnDragStop>
+						self:GetParent():StopMovingOrSizing();
+
+						-- Save the position, call lua callbacks to store and calculate.
+						local point, offsetX, offsetY = self:GetParent():GetParsedPosition();
+						Unmasked_DB = Unmasked_DB or {};
+						Unmasked_DB.point = point;
+						Unmasked_DB.offsetX = offsetX;
+						Unmasked_DB.offsetY = offsetY;
+
+						self:GetParent():SetUserPlaced(false);
+						self:GetParent():SetMovable(false);
+					</OnDragStop>
+				</Scripts>
+			</Frame>
+		</Frames>
+
+	</Checkbutton>
+
+</Ui>
