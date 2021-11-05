@@ -37,7 +37,8 @@ local UnitAura = UnitAura
 local auras = {
 
 	-- Blingtron
-	[222256] = true, 	-- Dressed to Kill
+	[134522] = true, 	-- Dressed to Kill (Male?)
+	[222256] = true, 	-- Dressed to Kill (Female?)
 
 	-- Hallow's End Costumes
 	[172010] = true, 	-- Abomination Costume
