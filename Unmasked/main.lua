@@ -81,6 +81,7 @@ local auras = {
 	[ 24710] = true, 	-- Ninja Costume
 	[ 24711] = true, 	-- Ninja Costume
 	[191686] = true, 	-- Ninja Costume
+	[334407] = true, 	-- Noble Bearing (The Harvest - Revendreth Treasure)
 	[ 24708] = true, 	-- Pirate Costume
 	[173958] = true, 	-- Pirate Costume
 	[173959] = true, 	-- Pirate Costume
