@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.5-Release] 2021-11-24
+### Added
+- Added the Pilgrim's Bounty Turkey Feathers transform.
+
 ## [1.0.4-Release] 2021-11-13
 ### Added
 - Added WoW's 17th Anniversary Wand costumes.

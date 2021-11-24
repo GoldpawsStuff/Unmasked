@@ -103,6 +103,7 @@ local auras = {
 	[172020] = true, 	-- Spider Costume
 	[ 99976] = true, 	-- Squashling Costume
 	[243321] = true, 	-- Tranquil Mechanical Yeti Costume
+	[ 61781] = true, 	-- Turkey Feathers
 	[178306] = true, 	-- Warsong Orc Costume
 	[178307] = true, 	-- Warsong Orc Costume
 	[191208] = true, 	-- Wight Costume
