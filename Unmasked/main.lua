@@ -40,6 +40,45 @@ local auras = {
 	[134522] = true, 	-- Dressed to Kill (Male?)
 	[222256] = true, 	-- Dressed to Kill (Female?)
 
+	-- Toys
+	[354546] = true, 	-- Inner Child -- VERIFIED!
+	[354909] = true, 	-- Inner Child
+	[354910] = true, 	-- Inner Child
+	[354911] = true, 	-- Inner Child
+	[354912] = true, 	-- Inner Child
+	[354913] = true, 	-- Inner Child
+	[354914] = true, 	-- Inner Child
+	[354915] = true, 	-- Inner Child
+	[354916] = true, 	-- Inner Child
+	[354917] = true, 	-- Inner Child
+	[354919] = true, 	-- Inner Child
+	[354920] = true, 	-- Inner Child
+	[354922] = true, 	-- Inner Child
+	[354924] = true, 	-- Inner Child
+	[354940] = true, 	-- Inner Child
+	[354941] = true, 	-- Inner Child
+	[354942] = true, 	-- Inner Child
+	[354943] = true, 	-- Inner Child
+	[354944] = true, 	-- Inner Child
+	[354945] = true, 	-- Inner Child
+	[354946] = true, 	-- Inner Child
+	[354947] = true, 	-- Inner Child
+	[354948] = true, 	-- Inner Child
+	[354949] = true, 	-- Inner Child
+	[354950] = true, 	-- Inner Child
+	[354951] = true, 	-- Inner Child
+	[354952] = true, 	-- Inner Child
+	[354953] = true, 	-- Inner Child
+	[354954] = true, 	-- Inner Child
+	[354955] = true, 	-- Inner Child
+	[354956] = true, 	-- Inner Child
+	[354957] = true, 	-- Inner Child
+	[354958] = true, 	-- Inner Child
+	[354959] = true, 	-- Inner Child
+	[354960] = true, 	-- Inner Child
+	[354961] = true, 	-- Inner Child
+	[354962] = true, 	-- Inner Child
+
 	-- Hallow's End Costumes
 	[172010] = true, 	-- Abomination Costume
 	[218132] = true, 	-- Banshee Costume
