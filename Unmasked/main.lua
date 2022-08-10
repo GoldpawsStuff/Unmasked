@@ -42,6 +42,7 @@ Private.frame:SetScript("OnEvent", function(self, event, ...)
 		local addon = ...
 		if (addon == Addon) then
 			self:UnregisterEvent("ADDON_LOADED")
+			self:RegisterUnitEvent("UNIT_AURA", "player")
 			self.auras = {}
 			for id in pairs({
 
