@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.10-Release] 2022-08-10
+### Added
+- Added Noblegarden Bunny, Dervish and Mohawked! to the list.
+
+### Changed
+- Rewrote the addon to work fully automatically without the need for a clickable button.
+
 ## [1.0.9-Release] 2022-05-31
 - Bump toc to WoW client patch 9.2.5.
 
