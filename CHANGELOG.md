@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.12-Release] 2022-10-25
+- Bumped retail version to the 10.0.0 patch.
+
 ## [1.1.11-Release] 2022-08-17
 - Bump to client patch 9.2.7.
 
