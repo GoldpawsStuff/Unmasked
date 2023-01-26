@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.14-Release] 2023-01-26
+- Updated for WoW 10.0.5.
+
 ## [1.1.13-Release] 2022-11-16
 - Bump to retail client patch 10.0.2.
 
